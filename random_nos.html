@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title> Random Numbers</title>
+</head>
+<body>
+   <p id="pract"></p>
+   <button onclick="getRandomInt(1, 100)" > Generate a Random Number From 1 to 100 </button>
+
+   <script>
+      // minimum is included, maximum is included
+      function getRandomInt(min, max) {
+         document.getElementById("pract").innerHTML = Math.floor(Math.random() * (max - min + 1)) + min;
+      }
+   </script>
+</body>
+</html>
